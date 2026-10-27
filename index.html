@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Eduardo Allebrandt | Portfólio</title>
+    <meta name="description" content="Portfólio de Luciano Eduardo Allebrandt, estudante de Ciência da Computação na URI.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">Luciano<span>.</span></a>
+            <ul>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== INÍCIO ===== -->
+        <section id="inicio">
+            <p class="saudacao">Olá, eu sou</p>
+            <h1>Luciano Eduardo Allebrandt</h1>
+            <p class="resumo">
+                Estudante de Ciência da Computação na URI. Desenvolvo sistemas web,
+                apps mobile e soluções com inteligência artificial.
+            </p>
+            <div class="acoes">
+                <a href="#projetos" class="botao">Ver projetos</a>
+                <a href="#contato" class="botao botao-contorno">Entrar em contato</a>
+            </div>
+        </section>
+
+        <!-- ===== PROJETOS ===== -->
+        <!-- EDITE: troque as descrições, tecnologias e links pelos dos seus projetos reais -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p class="intro-secao">Alguns trabalhos que desenvolvi em estudos e na faculdade.</p>
+
+            <div class="grade-projetos">
+
+                <article class="card card-destaque">
+                    <img src="img/passfy.webp" alt="Logo do PassFy" class="card-imagem">
+                    <div class="card-corpo">
+                        <p class="card-etiqueta">Projeto Integrador · URI</p>
+                        <h3>PassFy</h3>
+                        <p>
+                            Plataforma web de venda de ingressos para eventos. Organizadoras
+                            cadastram eventos com lotes de ingressos, e os clientes buscam
+                            eventos, montam o carrinho, finalizam a compra e acessam os
+                            ingressos numa carteira digital. O sistema consulta o CEP pela
+                            API ViaCEP e atualiza sozinho o status dos eventos encerrados
+                            ou esgotados.
+                        </p>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Blade</li>
+                            <li>Banco de Dados</li>
+                            <li>API ViaCEP</li>
+                        </ul>
+                        <div class="links-card">
+                            <a href="https://github.com/allebrandtluciano23-dot/PassFy" target="_blank">Ver código no GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-destaque">
+                    <img src="img/organizador-documentos.webp" alt="Logo do Sistema de Gestão Documental Inteligente" class="card-imagem">
+                    <div class="card-corpo">
+                        <p class="card-etiqueta">Hackathon · Pitch para banca</p>
+                        <h3>Sistema de Gestão Documental Inteligente</h3>
+                        <p>
+                            Aplicação desktop para prefeituras organizarem seus documentos.
+                            Ao enviar um PDF ou imagem, o sistema extrai o texto (com OCR
+                            quando necessário) e usa a IA Gemini para identificar o tipo do
+                            documento, a secretaria responsável e a data. Tem login, busca,
+                            filtros por secretaria, tipo, privacidade e período, e um painel
+                            com o total de documentos e o espaço usado.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>CustomTkinter</li>
+                            <li>Google Gemini</li>
+                            <li>OCR (Tesseract)</li>
+                            <li>PyMuPDF</li>
+                        </ul>
+                        <div class="links-card">
+                            <a href="https://github.com/allebrandtluciano23-dot/Projeto-Organizador-de-documentos" target="_blank">Ver código no GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-destaque">
+                    <img src="img/processamento-imagens.webp" alt="Foto da lua antes e depois do filtro Sobel" class="card-imagem card-imagem-inteira">
+                    <div class="card-corpo">
+                        <p class="card-etiqueta">Processamento de Imagens</p>
+                        <h3>Editor de Processamento de Imagens</h3>
+                        <p>
+                            Aplicação web que roda direto no navegador e aplica técnicas
+                            clássicas de processamento digital de imagens, todas implementadas
+                            do zero, pixel a pixel: operações aritméticas entre imagens,
+                            equalização de histograma, limiarização, operações lógicas,
+                            filtros de suavização (média, mediana, gaussiano), detecção de
+                            bordas (Prewitt, Sobel, Laplaciano) e morfologia matemática
+                            (erosão, dilatação, abertura e fechamento).
+                        </p>
+                        <ul class="tags">
+                            <li>JavaScript</li>
+                            <li>Canvas API</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="links-card">
+                            <a href="https://github.com/allebrandtluciano23-dot/Projeto-Processamento-de-imagens-" target="_blank">Ver código no GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Projetos menores, lado a lado -->
+            <div class="grade-projetos grade-secundaria">
+
+                <article class="card">
+                    <span class="status-dev">Em desenvolvimento</span>
+                    <h3>Gerenciador de Tarefas</h3>
+                    <p>
+                        App mobile para organizar tarefas do dia, com prioridade, descrição
+                        e data de criação, além de um painel com o total de tarefas e de
+                        concluídas. Os dados ficam salvos no próprio celular com SQLite.
+                    </p>
+                    <ul class="tags">
+                        <li>C#</li>
+                        <li>.NET MAUI</li>
+                        <li>XAML</li>
+                        <li>SQLite</li>
+                        <li>Android</li>
+                    </ul>
+                    <!-- EDITE: quando subir no GitHub, troque este texto por um link -->
+                    <p class="links-card nota-card">Código em breve no GitHub</p>
+                </article>
+
+                <article class="card">
+                    <span class="status-dev">Em desenvolvimento</span>
+                    <h3>Minha Loja</h3>
+                    <p>
+                        Loja virtual completa, com catálogo, carrinho, pedidos e login.
+                        O backend em Node.js com TypeScript e Express está em construção,
+                        com banco PostgreSQL via Prisma. Depois vem o frontend em React.
+                    </p>
+                    <ul class="tags">
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PostgreSQL</li>
+                        <li>Prisma</li>
+                    </ul>
+                    <!-- EDITE: quando subir no GitHub, troque este texto por um link -->
+                    <p class="links-card nota-card">Código em breve no GitHub</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===== CERTIFICADOS ===== -->
+        <section id="certificados">
+            <h2>Certificados</h2>
+            <p class="intro-secao">Cursos complementares que fiz durante a graduação.</p>
+
+            <ul class="lista-certificados">
+                <li class="certificado">
+                    <div class="cert-info">
+                        <h3>Git e Versionamento</h3>
+                        <p>URI Erechim · Cursos de Outono 2026 · Ciência da Computação</p>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-dados">20 h · maio 2026</span>
+                        <a href="https://www.uricer.edu.br/certificados/validate?c=ae90215d47c3f9e6b6eef3d00d4b7ac5" target="_blank">Validar</a>
+                    </div>
+                </li>
+                <li class="certificado">
+                    <div class="cert-info">
+                        <h3>Desenvolvimento Web com Laravel</h3>
+                        <p>URI Erechim · Cursos de Outono 2025 · Ciência da Computação</p>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-dados">15 h · maio 2025</span>
+                        <a href="https://www.uricer.edu.br/certificados/validate?c=63546711824b886b8b8321f28bc4e912" target="_blank">Validar</a>
+                    </div>
+                </li>
+                <li class="certificado">
+                    <div class="cert-info">
+                        <h3>Segurança, Proteção de Dados e Hackerismo</h3>
+                        <p>URI Erechim · Cursos de Outono 2024 · Ciência da Computação</p>
+                    </div>
+                    <div class="cert-meta">
+                        <span class="cert-dados">15 h · maio 2024</span>
+                        <a href="https://www.uricer.edu.br/certificados/validate?c=5953aab865aa6203967b192abb69fbc4" target="_blank">Validar</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== SOBRE ===== -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>
+                        Meu nome é Luciano Eduardo, moro em Ipiranga do Sul, RS, e sou
+                        estudante de Ciência da Computação na Universidade Regional Integrada
+                        do Alto Uruguai e das Missões (URI). Sou entusiasta de tecnologia e
+                        venho explorando diferentes linguagens e ferramentas por meio de
+                        estudos e projetos acadêmicos.
+                    </p>
+                    <p>
+                        Atualmente trabalho na área administrativa e de vendas de um posto de
+                        combustíveis, onde desenvolvo organização, comunicação, atendimento e
+                        trabalho em equipe. Busco uma oportunidade na área de tecnologia para
+                        aplicar meus conhecimentos, ganhar experiência e continuar evoluindo.
+                    </p>
+                </div>
+
+                <!-- EDITE: deixe só o que você realmente sabe -->
+                <div class="habilidades">
+                    <h3>Habilidades</h3>
+
+                    <p class="grupo-habilidade">Linguagens</p>
+                    <ul class="tags">
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                    </ul>
+
+                    <p class="grupo-habilidade">Frameworks e ferramentas</p>
+                    <ul class="tags">
+                        <li>Laravel</li>
+                        <li>Node.js</li>
+                        <li>.NET MAUI</li>
+                        <li>HTML e CSS</li>
+                        <li>Git e GitHub</li>
+                    </ul>
+
+                    <p class="grupo-habilidade">Dados e IA</p>
+                    <ul class="tags">
+                        <li>SQL</li>
+                        <li>SQLite</li>
+                        <li>APIs REST</li>
+                        <li>Google Gemini</li>
+                        <li>Processamento de Imagens</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p class="intro-secao">Quer conversar sobre uma vaga ou projeto? Me chama!</p>
+            <ul class="lista-contato">
+                <li>
+                    <span class="rotulo">E-mail</span>
+                    <span>allebrandtluciano23@gmail.com</span>
+                </li>
+                <li>
+                    <span class="rotulo">Telefone</span>
+                    <span>(54) 98141-0768</span>
+                </li>
+                <li>
+                    <span class="rotulo">GitHub</span>
+                    <a href="https://github.com/allebrandtluciano23-dot" target="_blank">github.com/allebrandtluciano23-dot</a>
+                </li>
+                <li>
+                    <span class="rotulo">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/luciano-allebrandt-b91839235" target="_blank">linkedin.com/in/luciano-allebrandt</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Luciano Eduardo Allebrandt</p>
+    </footer>
+
+</body>
+</html>
